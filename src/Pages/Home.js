@@ -198,8 +198,8 @@ const Home = () => {
       {/* Our Services  */}
       <section id="our-services">
         <div className="container-fluid p-0 m-0">
-          <img className="img-fluid services-bg" src="/Images/BG.png" alt="" />
-          <div className="container services-container">
+          {/* <img className="img-fluid services-bg" src="/Images/BG.png" alt="" /> */}
+          <div className="container ">
             <div className="container text-center mt-4">
               <h1 className="big-headers">Tripto</h1>
               <h3 className="sub-headers">Our Services</h3>

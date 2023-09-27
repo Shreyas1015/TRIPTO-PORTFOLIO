@@ -3,7 +3,7 @@ import React from "react";
 const Cards = (props) => {
   return (
     <>
-      <div className="card our-services-cards mx-auto my-3 text-center px-3 py-3 glassomorphic-effect">
+      <div className="card our-services-cards mx-auto my-3 text-center p-3 glassomorphic-effect">
         <div className="card-body">
           <h5 className="card-title mb-4">
             <i className={props.icon} style={{ color: "#272525" }} />
