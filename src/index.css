@@ -1,0 +1,631 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bree Serif", serif;
+  letter-spacing: 1px;
+  scroll-behavior: smooth;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  color: #0bbfe0;
+}
+/* glassomorphic-effect */
+.glassomorphic-effect {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.big-headers {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #0bbfe0;
+}
+
+.sub-headers {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.blue-buttons {
+  color: #0bbfe0;
+  border-color: #0bbfe0;
+}
+
+.blue-buttons:hover {
+  color: black;
+  background-color: #0bbfe0;
+}
+
+.input-fields {
+  width: 8rem;
+  padding: 0.5rem 1rem;
+}
+
+.landing-page-image {
+  height: 100vh;
+  width: 99vw;
+}
+
+.nav-link {
+  color: #62c1bf;
+}
+@keyframes slide-in-and-fade {
+  0% {
+    transform: translateX(-130%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+}
+
+.landing-page-car {
+  width: 45vw;
+  top: 55vh;
+  left: 50vw;
+  animation: slide-in-and-fade infinite 3s ease-in-out;
+}
+
+.box-shadow-container {
+  box-shadow: 0px 20px 30px rgb(0 0 0 / 0.2);
+  position: relative;
+  bottom: 5rem;
+  background: whitesmoke;
+  width: 75vw;
+}
+
+.cars_2 {
+  height: 70vh;
+}
+
+.count-box {
+  width: 75vw;
+  height: 25vh;
+  position: relative;
+  top: 13vh;
+}
+
+.flets-container {
+  margin-top: 10rem;
+}
+
+.services-container {
+  position: absolute;
+  z-index: 100;
+  top: 476vh;
+  left: 7vw;
+}
+
+.services-bg {
+  height: 100vh;
+}
+
+.blue-box {
+  background-color: #62c1bf;
+}
+
+.dark-blue-box {
+  background-color: #0bbfe0;
+}
+
+.background-svg {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%230bbfe0" fill-opacity="1" d="M0,64L17.1,101.3C34.3,139,69,213,103,250.7C137.1,288,171,288,206,245.3C240,203,274,117,309,112C342.9,107,377,181,411,181.3C445.7,181,480,107,514,117.3C548.6,128,583,224,617,250.7C651.4,277,686,235,720,229.3C754.3,224,789,256,823,229.3C857.1,203,891,117,926,106.7C960,96,994,160,1029,165.3C1062.9,171,1097,117,1131,90.7C1165.7,64,1200,64,1234,96C1268.6,128,1303,192,1337,186.7C1371.4,181,1406,107,1423,69.3L1440,32L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path></svg>');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutus-svg {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,256L15,256C30,256,60,256,90,261.3C120,267,150,277,180,277.3C210,277,240,267,270,250.7C300,235,330,213,360,197.3C390,181,420,171,450,186.7C480,203,510,245,540,224C570,203,600,117,630,80C660,43,690,53,720,53.3C750,53,780,43,810,48C840,53,870,75,900,101.3C930,128,960,160,990,176C1020,192,1050,192,1080,170.7C1110,149,1140,107,1170,106.7C1200,107,1230,149,1260,186.7C1290,224,1320,256,1350,240C1380,224,1410,160,1425,128L1440,96L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z"></path></svg>');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flets-card {
+  height: 60vh;
+}
+
+.flets-card img {
+  height: 40vh;
+}
+
+.about-us-container {
+  bottom: 20vh;
+}
+
+.contact-us-container {
+  bottom: 50vh;
+}
+
+.nav-brand {
+  max-height: 40px;
+  filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+.our-services-cards {
+  height: 50vh;
+  width: 25rem;
+}
+
+@media (min-width: 360px) and (max-width: 375px) {
+  .landing-page-car {
+    width: 45vw;
+    top: 19vh;
+    left: 50vw;
+    animation: slide-in-and-fade infinite 3s ease-in-out;
+  }
+
+  .cars_2 {
+    height: 70vh;
+    display: none;
+  }
+
+  .about-us-text {
+    padding: 2rem !important;
+  }
+
+  .big-headers {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0bbfe0;
+  }
+
+  .sub-headers {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .box-4-container {
+    padding: 0;
+  }
+
+  .count-box {
+    width: 100vw;
+    height: 25vh;
+    position: relative;
+    top: -4vh;
+  }
+
+  .flets-card img {
+    height: 20vh;
+  }
+
+  .flets-card {
+    height: 47vh;
+  }
+
+  .services-container {
+    position: absolute;
+    z-index: 100;
+    top: 548vh;
+    padding: 0;
+    left: 0;
+  }
+
+  .our-services-cards {
+    height: 42vh;
+    width: 19rem;
+    margin-left: 2.5rem !important;
+  }
+
+  .services-bg {
+    height: 160vh;
+    object-fit: cover;
+  }
+
+  .book-your-cab-container {
+    padding: 2rem 1rem !important;
+  }
+
+  .footer-padding {
+    padding: 2rem 1rem !important;
+  }
+
+  .service-row {
+    width: 99%;
+  }
+
+  .media-contact-text {
+    padding: 2rem 1rem !important;
+  }
+
+  .media-about-text {
+    padding: 2rem 1rem !important;
+  }
+
+  .about-us-container {
+    bottom: 4vh;
+  }
+  .about-us-container h2,
+  h1 {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 411px) {
+  .landing-page-car {
+    width: 45vw;
+    top: 18vh;
+    left: 50vw;
+    animation: slide-in-and-fade infinite 3s ease-in-out;
+  }
+
+  .cars_2 {
+    height: 70vh;
+    display: none;
+  }
+
+  .about-us-text {
+    padding: 2rem !important;
+  }
+
+  .big-headers {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0bbfe0;
+  }
+
+  .sub-headers {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .box-4-container {
+    padding: 0;
+  }
+
+  .count-box {
+    width: 100vw;
+    height: 25vh;
+    position: relative;
+    top: -4vh;
+  }
+
+  .flets-card img {
+    height: 20vh;
+  }
+
+  .flets-card {
+    height: 47vh;
+  }
+
+  .services-container {
+    position: absolute;
+    z-index: 100;
+    top: 562vh;
+    padding: 0;
+    left: 0;
+  }
+
+  .our-services-cards {
+    height: 42vh;
+    width: 21rem;
+    margin-left: 1.3rem !important;
+  }
+
+  .services-bg {
+    height: 160vh;
+    object-fit: cover;
+  }
+
+  .book-your-cab-container {
+    padding: 2rem 1rem !important;
+  }
+
+  .footer-padding {
+    padding: 2rem 1rem !important;
+  }
+
+  .service-row {
+    width: 99%;
+  }
+
+  .media-contact-text {
+    padding: 2rem 1rem !important;
+  }
+
+  .media-about-text {
+    padding: 2rem 1rem !important;
+  }
+
+  .about-us-container {
+    bottom: 4vh;
+  }
+  .about-us-container h2,
+  h1 {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .landing-page-car {
+    width: 45vw;
+    top: 19vh;
+    left: 50vw;
+    animation: slide-in-and-fade infinite 3s ease-in-out;
+  }
+
+  .cars_2 {
+    height: 70vh;
+    display: none;
+  }
+
+  .about-us-text {
+    padding: 2rem !important;
+  }
+
+  .big-headers {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0bbfe0;
+  }
+
+  .sub-headers {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .box-4-container {
+    padding: 0;
+  }
+
+  .count-box {
+    width: 100vw;
+    height: 25vh;
+    position: relative;
+    top: -4vh;
+  }
+
+  .flets-card img {
+    height: 20vh;
+  }
+
+  .flets-card {
+    height: 47vh;
+  }
+
+  .services-container {
+    position: absolute;
+    z-index: 100;
+    top: 600vh;
+    padding: 0;
+    left: 0;
+  }
+
+  .our-services-cards {
+    height: 42vh;
+    width: 19rem;
+    margin-left: 2rem !important;
+  }
+
+  .services-bg {
+    height: 169vh;
+    object-fit: cover;
+  }
+
+  .book-your-cab-container {
+    padding: 2rem 1rem !important;
+  }
+
+  .footer-padding {
+    padding: 2rem 1rem !important;
+  }
+
+  .service-row {
+    width: 99%;
+  }
+
+  .media-contact-text {
+    padding: 2rem 1rem !important;
+  }
+
+  .media-about-text {
+    padding: 2rem 1rem !important;
+  }
+
+  .about-us-container {
+    bottom: 4vh;
+  }
+  .about-us-container h2,
+  h1 {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (min-width: 411px) {
+  .landing-page-car {
+    width: 45vw;
+    top: 19vh;
+    left: 50vw;
+    animation: slide-in-and-fade infinite 3s ease-in-out;
+  }
+
+  .cars_2 {
+    height: 70vh;
+    display: none;
+  }
+
+  .about-us-text {
+    padding: 2rem !important;
+  }
+
+  .big-headers {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0bbfe0;
+  }
+
+  .sub-headers {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .box-4-container {
+    padding: 0;
+  }
+
+  .count-box {
+    width: 100vw;
+    height: 25vh;
+    position: relative;
+    top: -4vh;
+  }
+
+  .flets-card img {
+    height: 20vh;
+  }
+
+  .flets-card {
+    height: 47vh;
+  }
+
+  .services-container {
+    position: absolute;
+    z-index: 100;
+    top: 514vh;
+    padding: 0;
+    left: 0;
+  }
+
+  .our-services-cards {
+    height: 42vh;
+    width: 19rem;
+    margin-left: 3rem !important;
+  }
+
+  .services-bg {
+    height: 160vh;
+    object-fit: cover;
+  }
+
+  .book-your-cab-container {
+    padding: 2rem 1rem !important;
+  }
+
+  .footer-padding {
+    padding: 2rem 1rem !important;
+  }
+
+  .service-row {
+    width: 99%;
+  }
+
+  .media-contact-text {
+    padding: 2rem 1rem !important;
+  }
+
+  .media-about-text {
+    padding: 2rem 1rem !important;
+  }
+
+  .about-us-container {
+    bottom: 4vh;
+  }
+  .about-us-container h2,
+  h1 {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 360px) and (max-height: 720px) {
+  .landing-page-car {
+    width: 45vw;
+    top: 20vh;
+    left: 50vw;
+    animation: slide-in-and-fade infinite 3s ease-in-out;
+  }
+
+  .cars_2 {
+    height: 70vh;
+    display: none;
+  }
+
+  .about-us-text {
+    padding: 2rem !important;
+  }
+
+  .big-headers {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0bbfe0;
+  }
+
+  .sub-headers {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .box-4-container {
+    padding: 0;
+  }
+
+  .count-box {
+    width: 100vw;
+    height: 25vh;
+    position: relative;
+    top: -4vh;
+  }
+
+  .flets-card img {
+    height: 20vh;
+  }
+
+  .flets-card {
+    height: 47vh;
+  }
+
+  .services-container {
+    position: absolute;
+    z-index: 100;
+    top: 610vh;
+    padding: 0;
+    left: 0;
+  }
+  .our-services-cards {
+    height: 42vh;
+    width: 19rem;
+    margin-left: 1.5rem !important;
+  }
+
+  .services-bg {
+    height: 160vh;
+    object-fit: cover;
+  }
+
+  .book-your-cab-container {
+    padding: 2rem 1rem !important;
+  }
+
+  .footer-padding {
+    padding: 2rem 1rem !important;
+  }
+
+  .service-row {
+    width: 99%;
+  }
+
+  .media-contact-text {
+    padding: 2rem 1rem !important;
+  }
+
+  .media-about-text {
+    padding: 2rem 1rem !important;
+  }
+
+  .about-us-container {
+    bottom: 4vh;
+  }
+  .about-us-container h2,
+  h1 {
+    padding: 0.5rem 1rem;
+  }
+}
